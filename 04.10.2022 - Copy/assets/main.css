@@ -1,0 +1,486 @@
+header {
+    background-color: #1abc9c;
+    height: 100vh;
+    font-family: sans-serif;
+    background-position: center;
+    background-size: 100%;
+    }
+    nav {
+    height: 85px;
+    top: 0;
+    background-color: #29343f;
+    opacity: 1;
+    z-index: 9;
+}
+    .displayflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .displayflex2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .position-fixed {
+    position: fixed;
+    }
+    .marg-left {
+        margin-left: 7%;
+    }
+    .marg-right {
+        margin-right: 7%;
+    }
+    .w-100 {
+    width: 100%;
+    }
+    .basliq1 {
+    font-weight: 12%;
+    font-style: normal;
+    font-size: 1.75rem;
+    font-weight: bold;
+    }
+    .decor {
+    text-decoration: none;
+    }
+    .textwhite {
+        color: white;
+    }
+    .menu li {
+    display: inline-block;
+    }
+    .menu li a {
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.3s;
+    }
+    .menu li a:hover {
+        color: rgb(200, 200, 200);
+    }
+    .avatar-img {
+       width: 15rem;
+       margin-top: 10rem;
+       margin-left: 39rem;
+       margin-bottom: 3rem;
+    }
+    .text-h1 {
+       font-size: 4rem;
+        line-height: 3.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .icon {
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .icon::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        width: 110px;
+        height: 5px;
+        left: 0%;
+        top:50%;
+        margin-left: 38rem;
+    }
+    .icon::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        width: 110px;
+        height: 5px;
+        right: 0%;
+        top:50%;
+        margin-right: 38rem;
+    }
+    .text-h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    #portfolio {
+        background-size: 100%;
+        background-color: white;
+    }
+    .flex-direction {
+        flex-direction: row;
+    }
+    .text-color-size {
+        color: #29343f;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+    .icon2 {
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .icon2::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: #29343f;
+        border-radius: 5px;
+        width: 110px;
+        height: 5px;
+        left: 0%;
+        top:50%;
+        margin-left: 32rem;
+    }
+    .icon2::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: #29343f;
+        position: absolute;
+        border-radius: 5px;
+        width: 110px;
+        height: 5px;
+        right: 0%;
+        top:50%;
+        margin-right: 32rem;
+    }
+    .item {
+        margin-top: 1rem;
+        width: 25rem;
+        position: relative;
+    }
+    .image {
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    height: 94%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 7px;
+    background-color: #1abc9c;
+    }
+    .item-h2 {
+        position: absolute;
+        font-size: 70px;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .item:hover .overlay{
+        background-color: #1abc9c;
+        opacity: 0.85;
+    }
+    .fa-bars {
+        color: white;
+        size: 45px;
+        display: none;
+    }
+    @media (max-width:576px) {
+        .avatar-img {
+       width: 5rem;
+       margin-top: 10rem;
+       margin-left: 15rem;
+       margin-bottom: 3rem;
+    }
+    .icon::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 6rem;
+    }
+    .icon::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 6rem;
+    }
+    .icon2::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: #29343f;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 4rem;
+    }
+    .icon2::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: #29343f;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 4rem;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 20px;
+        
+    }
+    .menu li {
+        display: none;
+    }
+    }
+    @media (min-width:576px) and (max-width:768px) {
+        .avatar-img {
+       width: 10rem;
+       margin-top: 10rem;
+       margin-left: 16rem;
+       margin-bottom: 3rem;
+    }
+    .icon::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 11rem;
+    }
+    .icon::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 11rem;
+    }
+    .icon2::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: #29343f;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 9rem;
+    }
+    .icon2::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: #29343f;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 9rem;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 20px;
+        
+    }
+    .menu li {
+        display: none;
+    }
+    }
+    @media (min-width:768px) and (max-width:992px) {
+        .avatar-img {
+       width: 13rem;
+       margin-top: 10rem;
+       margin-left: 20rem;
+       margin-bottom: 3rem;
+    }
+    .icon::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 15rem;
+    }
+    .icon::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 15rem;
+    }
+    .icon2::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: #29343f;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 12rem;
+    }
+    .icon2::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: #29343f;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 12rem;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 36px;
+    }
+    .menu li {
+        display: none;
+    }
+    .item {
+        width: 20rem;
+    }
+    .displayflex2 {
+        flex-wrap: wrap;
+    }
+    }
+    @media (min-width:992px) and (max-width:1200px) {
+        .avatar-img {
+       width: 14rem;
+       margin-top: 10rem;
+       margin-left: 26rem;
+       margin-bottom: 3rem;
+    }
+    .icon::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 20rem;
+    }
+    .icon::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 20rem;
+    }
+    .icon2::before {
+        content: "";
+        display: block;
+        text-align: right;
+        position: absolute;
+        background-color: #29343f;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        left: 0%;
+        top:50%;
+        margin-left: 16rem;
+    }
+    .icon2::after {
+        content: "";
+        display: block;
+        text-align: right;
+        background-color: #29343f;
+        position: absolute;
+        border-radius: 5px;
+        width: 100px;
+        height: 2px;
+        right: 0%;
+        top:50%;
+        margin-right: 16rem;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 45px;
+        
+    }
+    .menu li {
+        display: none;
+    }
+    .item {
+        width: 20rem;
+    }
+    .displayflex2 {
+        flex-wrap: wrap;
+    }
+    }
